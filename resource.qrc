@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="IconAboutProgram">resource/about.png</file>
+        <file alias="IconRemoveAll">resource/cancel.png</file>
+        <file alias="IconQuit">resource/quit.png</file>
+        <file alias="IconProgram">resource/icon.png</file>
+        <file alias="IconRemove">resource/minus.png</file>
+        <file alias="IconRun">resource/start.png</file>
+        <file alias="IconRunAll">resource/start all.png</file>
+        <file alias="IconDuplicate">resource/duplicate.png</file>
+        <file alias="IconFolder">resource/folder.png</file>
+        <file alias="IconSettings">resource/settings.png</file>
+        <file alias="IconClear">resource/cleartext_leave.png</file>
+        <file alias="IconAddFolder">resource/folder_add.png</file>
+        <file alias="IconAddFile">resource/file_add.png</file>
+        <file alias="IconCopyFileToClipboard">resource/Copy file to clipboard.png</file>
+        <file alias="IconCopyPathFileToClipboard">resource/Copy path file to clipboard.png</file>
+        <file alias="IconAddHyperlink">resource/Add hyperlink.png</file>
+        <file alias="IconHyperlink">resource/hyperlink.png</file>
+        <file alias="IconSearch">resource/search_32.png</file>
+        <file alias="IconDrop">resource/dropbox animation.gif</file>
+    </qresource>
+</RCC>

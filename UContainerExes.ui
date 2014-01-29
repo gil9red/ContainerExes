@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UConteinerExes</class>
+ <widget class="QMainWindow" name="UConteinerExes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UConteinerExes</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="margin">
+     <number>7</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QToolButton" name="tButtonStart">
+        <property name="toolTip">
+         <string>Запустить</string>
+        </property>
+        <property name="statusTip">
+         <string>Запустить</string>
+        </property>
+        <property name="text">
+         <string>Запустить</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconRun</normaloff>:/IconRun</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonStartAll">
+        <property name="toolTip">
+         <string>Запустить все</string>
+        </property>
+        <property name="statusTip">
+         <string>Запустить все</string>
+        </property>
+        <property name="text">
+         <string>Запустить все</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconRunAll</normaloff>:/IconRunAll</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonSettings">
+        <property name="toolTip">
+         <string>Настройки</string>
+        </property>
+        <property name="statusTip">
+         <string>Настройки</string>
+        </property>
+        <property name="text">
+         <string>Настройки</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconSettings</normaloff>:/IconSettings</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonShowInFolder">
+        <property name="toolTip">
+         <string>Показать файл в папке</string>
+        </property>
+        <property name="statusTip">
+         <string>Показать файл в папке</string>
+        </property>
+        <property name="text">
+         <string>Показать в папке</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconFolder</normaloff>:/IconFolder</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonCopyPathToFile">
+        <property name="toolTip">
+         <string>Копировать путь (к файлу/папке/url-адресу) в буфер обмена</string>
+        </property>
+        <property name="statusTip">
+         <string>Копировать путь (к файлу/папке/url-адресу) в буфер обмена</string>
+        </property>
+        <property name="text">
+         <string>Копировать путь (к файлу/папке/url-адресу) в буфер обмена</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconCopyPathFileToClipboard</normaloff>:/IconCopyPathFileToClipboard</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonCopyFile">
+        <property name="toolTip">
+         <string>Копировать файл/папку в буфер обмена</string>
+        </property>
+        <property name="statusTip">
+         <string>Копировать файл/папку в буфер обмена</string>
+        </property>
+        <property name="text">
+         <string>Копировать файл/папку в буфер обмена</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconCopyFileToClipboard</normaloff>:/IconCopyFileToClipboard</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonAddFile">
+        <property name="toolTip">
+         <string>Добавить файл</string>
+        </property>
+        <property name="statusTip">
+         <string>Добавить файл</string>
+        </property>
+        <property name="text">
+         <string>Добавить файл</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconAddFile</normaloff>:/IconAddFile</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonAddUrl">
+        <property name="toolTip">
+         <string>Добавить адрес URL</string>
+        </property>
+        <property name="statusTip">
+         <string>Добавить адрес URL</string>
+        </property>
+        <property name="text">
+         <string>Добавить адрес URL</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconAddHyperlink</normaloff>:/IconAddHyperlink</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonAddFolder">
+        <property name="toolTip">
+         <string>Добавить папку</string>
+        </property>
+        <property name="statusTip">
+         <string>Добавить папку</string>
+        </property>
+        <property name="text">
+         <string>Добавить папку</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconAddFolder</normaloff>:/IconAddFolder</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonRemove">
+        <property name="toolTip">
+         <string>Удалить запись</string>
+        </property>
+        <property name="statusTip">
+         <string>Удалить запись</string>
+        </property>
+        <property name="text">
+         <string>Удалить запись</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconRemove</normaloff>:/IconRemove</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonDuplicate">
+        <property name="toolTip">
+         <string>Сделать дупликат</string>
+        </property>
+        <property name="statusTip">
+         <string>Сделать дупликат</string>
+        </property>
+        <property name="text">
+         <string>Дупликат</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconDuplicate</normaloff>:/IconDuplicate</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonRemoveAll">
+        <property name="toolTip">
+         <string>Удалить все записи</string>
+        </property>
+        <property name="statusTip">
+         <string>Удалить все записи</string>
+        </property>
+        <property name="text">
+         <string>Удалить все записи</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconRemoveAll</normaloff>:/IconRemoveAll</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonQuit">
+        <property name="toolTip">
+         <string>Выход</string>
+        </property>
+        <property name="statusTip">
+         <string>Выход</string>
+        </property>
+        <property name="text">
+         <string>Выход</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconQuit</normaloff>:/IconQuit</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="tButtonAbout">
+        <property name="toolTip">
+         <string>О программе</string>
+        </property>
+        <property name="statusTip">
+         <string>О программе</string>
+        </property>
+        <property name="text">
+         <string>О программе</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resource.qrc">
+          <normaloff>:/IconAboutProgram</normaloff>:/IconAboutProgram</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableView" name="tView">
+      <property name="editTriggers">
+       <set>QAbstractItemView::DoubleClicked</set>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>510</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="actionLoadDB"/>
+    <addaction name="actionSaveDBAs"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuCorrection">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="actionSearch"/>
+   </widget>
+   <widget class="QMenu" name="menuCommand">
+    <property name="title">
+     <string>Команды</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionStart"/>
+    <addaction name="actionStartAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowInFolder"/>
+    <addaction name="separator"/>
+    <addaction name="actionAddFile"/>
+    <addaction name="actionAddFolder"/>
+    <addaction name="actionAddUrl"/>
+    <addaction name="separator"/>
+    <addaction name="actionDuplicate"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemove"/>
+    <addaction name="actionRemoveAll"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionCopyPathToFile"/>
+    <addaction name="actionCopyFile"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCorrection"/>
+   <addaction name="menuCommand"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetListTags">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>Тэги</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="margin">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QListWidget" name="lWidgetTags">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconQuit</normaloff>:/IconQuit</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconSearch</normaloff>:/IconSearch</iconset>
+   </property>
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+   <property name="statusTip">
+    <string>Поиск</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRun</normaloff>:/IconRun</iconset>
+   </property>
+   <property name="text">
+    <string>Запустить</string>
+   </property>
+   <property name="statusTip">
+    <string>Запустить</string>
+   </property>
+  </action>
+  <action name="actionStartAll">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRunAll</normaloff>:/IconRunAll</iconset>
+   </property>
+   <property name="text">
+    <string>Запустить все</string>
+   </property>
+   <property name="statusTip">
+    <string>Запустить все</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAboutProgram</normaloff>:/IconAboutProgram</iconset>
+   </property>
+   <property name="text">
+    <string>О программе</string>
+   </property>
+   <property name="statusTip">
+    <string>О программе</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAddFile">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAddFile</normaloff>:/IconAddFile</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить файл</string>
+   </property>
+   <property name="statusTip">
+    <string>Добавить файл</string>
+   </property>
+  </action>
+  <action name="actionAddFolder">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAddFolder</normaloff>:/IconAddFolder</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить папку</string>
+   </property>
+   <property name="statusTip">
+    <string>Добавить папку</string>
+   </property>
+  </action>
+  <action name="actionAddUrl">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconAddHyperlink</normaloff>:/IconAddHyperlink</iconset>
+   </property>
+   <property name="text">
+    <string>Добавить адрес URL</string>
+   </property>
+   <property name="statusTip">
+    <string>Добавить адрес URL</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRemove</normaloff>:/IconRemove</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+   <property name="statusTip">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="actionRemoveAll">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconRemoveAll</normaloff>:/IconRemoveAll</iconset>
+   </property>
+   <property name="text">
+    <string>Удалить все записи</string>
+   </property>
+   <property name="statusTip">
+    <string>Удалить все записи</string>
+   </property>
+  </action>
+  <action name="actionDuplicate">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconDuplicate</normaloff>:/IconDuplicate</iconset>
+   </property>
+   <property name="text">
+    <string>Дупликат</string>
+   </property>
+   <property name="statusTip">
+    <string>Дупликат</string>
+   </property>
+  </action>
+  <action name="actionCopyPathToFile">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconCopyPathFileToClipboard</normaloff>:/IconCopyPathFileToClipboard</iconset>
+   </property>
+   <property name="text">
+    <string>Копировать путь в буфер обмена</string>
+   </property>
+   <property name="iconText">
+    <string>Копировать путь в буфер обмена</string>
+   </property>
+   <property name="toolTip">
+    <string>Копировать путь (к файлу/папке/url-адресу) в буфер обмена</string>
+   </property>
+   <property name="statusTip">
+    <string>Копировать путь (к файлу/папке/url-адресу) в буфер обмена</string>
+   </property>
+  </action>
+  <action name="actionCopyFile">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconCopyFileToClipboard</normaloff>:/IconCopyFileToClipboard</iconset>
+   </property>
+   <property name="text">
+    <string>Копировать файл/папку в буфер обмена</string>
+   </property>
+   <property name="statusTip">
+    <string>Копировать файл/папку в буфер обмена</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconSettings</normaloff>:/IconSettings</iconset>
+   </property>
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+   <property name="statusTip">
+    <string>Настройки</string>
+   </property>
+  </action>
+  <action name="actionShowInFolder">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IconFolder</normaloff>:/IconFolder</iconset>
+   </property>
+   <property name="text">
+    <string>Показать файл в папке</string>
+   </property>
+   <property name="statusTip">
+    <string>Показать файл в папке</string>
+   </property>
+  </action>
+  <action name="actionSaveDBAs">
+   <property name="text">
+    <string>Сохранить таблицу как...</string>
+   </property>
+   <property name="statusTip">
+    <string>Сохранить таблицу как</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionLoadDB">
+   <property name="text">
+    <string>Загрузить таблицу от...</string>
+   </property>
+   <property name="statusTip">
+    <string>Загрузить таблицу от</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
